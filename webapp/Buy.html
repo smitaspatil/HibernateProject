@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <title>HTML BS Forms</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <form action="Report.html" class="was-validated">
+        <div class="form-group">
+          <label for="name">Card Holders Name</label>
+          <input
+            class="form-control"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Please Enter your name"
+            required
+          />
+          <div class="valid-feedback">Valid Field</div>
+          <div class="invalid-feedback">Please fill out the field</div>
+        </div>
+        <div class="form-group">
+          <label for="password">Card Number</label>
+          <input
+            class="form-control"
+            type="number"
+            name="number"
+            id="number"
+            minlength="3"
+            maxlength="8"
+            required
+            placeholder="Please Enter card Number"
+            required
+          />
+          <div class="valid-feedback">Valid Field</div>
+          <div class="invalid-feedback">Please fill out the field</div>
+        </div>
+          <div class="form-group">
+            <label for="month">Expiray Month</label>
+            <input
+              class="form-control"
+              type="number"
+              name="month"
+              id="month"
+              placeholder="month"
+              required
+            />
+           
+          </div>
+          <div class="valid-feedback">Valid Field</div>
+          <div class="invalid-feedback">Please fill out the field</div>
+        </div>
+        <div class="form-group">
+            <label for="Year">Expiray Year</label>
+            <input
+              class="form-control"
+              type="number"
+              name="year"
+              id="year"
+              placeholder="2023"
+              required
+            />
+           
+          </div>
+          <div class="valid-feedback">Valid Field</div>
+          <div class="invalid-feedback">Please fill out the field</div>
+        </div>
+        <div class="form-group">
+            <label for="CVV">CVV</label>
+            <input
+              class="form-control"
+              type="number"
+              name="CVV"
+              id="CVV"
+              placeholder="CVV"
+              required
+            />
+           
+          </div>
+          <div class="valid-feedback">Valid Field</div>
+          <div class="invalid-feedback">Please fill out the field</div>
+        </div>
+        
+          <div class="form-group"><h2>Billing Address</h2>
+            <label for="Billing Address">Address</label>
+            <input
+              class="form-control"
+              type="text"
+              name="addr"
+              id="addr"
+              placeholder="Please Enter your name,Address,pincode,city,state"
+              required
+            />
+            <div class="form-group form-check">
+                <label class="form-check-label"></label
+                ><input
+                  type="checkbox"
+                  class="form-check-input"
+                  name="remember"
+                  required
+                />
+            <div class="valid-feedback">Valid Field</div>
+            <div class="invalid-feedback">Shipping address is same as Billing Address</div>
+          </div>
+         
+        
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
